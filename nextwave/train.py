@@ -15,7 +15,6 @@ def build_random_batch(training_examples, batch_size):
     inputs, targets = list(zip(*[training_examples[i] for i in indices]))
     return inputs, targets
 
-
 def train_network_on_audio(
         model, training_examples, 
         loss_function=None, optimizer=None, 
